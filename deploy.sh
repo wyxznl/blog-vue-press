@@ -21,6 +21,6 @@ git remote add origin git@github.com:wyxznl/interview.git
 git branch -M main
 git add .
 git commit -m 'steps'
-git push -u origin main:gh-pages
+git push -f -u origin main:gh-pages
 
 cd -

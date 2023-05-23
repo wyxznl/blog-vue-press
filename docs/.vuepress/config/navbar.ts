@@ -1,13 +1,18 @@
 export default [
   {
-    text: "组件",
-    link: "/components/",
+    text: '首页',
+    link: '/'
   },
   {
-    text: "文档",
+    text: '面试题',
+    link: '/interview/css/box.md',
+  },
+  {
+    text: '组件',
     children: [
-      { text: "介绍", link: "/document/introduction/" },
-      { text: "注意事项", link: "/document/tips/" },
+      '/components/life01.md',
+      '/components/life02.md',
+      '/components/life03.md'
     ],
   },
   {

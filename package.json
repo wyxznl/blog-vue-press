@@ -1,13 +1,16 @@
 {
-  "name": "vuePressBlog",
+  "name": "vue-press-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "blog",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "keywords": [],
+  "keywords": [
+    "web",
+    "interview"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
