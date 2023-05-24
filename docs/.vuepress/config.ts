@@ -1,5 +1,7 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { searchPlugin } from '@vuepress/plugin-search'
 import navbar from './config/navbar'
 import sidebar from './config/sidebar'
 
@@ -22,6 +24,19 @@ export default defineUserConfig<DefaultThemeOptions>({
   // 配置当前使用的主题，当前为默认主题
   theme: defaultTheme({
     navbar,
-    sidebar
-  })
+    sidebar,
+  }),
+  plugins: [
+    backToTopPlugin(),
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Search',
+        },
+        '/zh/': {
+          placeholder: '搜索',
+        },
+      },
+    })
+  ]
 })

@@ -260,7 +260,7 @@ const changeToSideBar = (obj) => {
     return {
       text: key,
       link: `/${PREFIX}/${value?.[0]}`,
-      collapsable: true,
+      collapsible: true,
       children: value.map(i => `/${PREFIX}/${i}`)
     }
   })
